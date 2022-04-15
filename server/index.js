@@ -24,7 +24,12 @@ mongoose.connect(process.env.MONGO_URL, {
 })
 
 
-const server = app.listen(process.env.PORT, () => {
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('../public/chat-app/build/'))
+} 
+
+
+const server = app.listen(process.env.PORT || 5000, () => {
     console.log(`Server is listening on port ${process.env.PORT}`);
 })
 

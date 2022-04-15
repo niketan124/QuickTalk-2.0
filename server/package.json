@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "nodemon": "nodemon index.js"
+    "build": "cd ../public/chat-app/ && npm run build",
+    "install-public": "cd ../public/chat-app/ && npm install",
+    "public": "cd ../public/chat-app/ && npm start",
+    "start": "node index.js",
+    "nodemon": "nodemon index.js",
+    "heroku-postbuild": "npm run install-public && npm run build"
   },
   "author": "niketan",
   "license": "ISC",
