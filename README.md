@@ -14,3 +14,9 @@ After downloading node modules in this path, on the CLI type nodemon start or no
 It will open a page on localhost:3000 on your default browser and now you are ready to go!.
 
 And our backend will start on localhost:5000.
+
+
+# Or visit the deployed app
+
+Click here(https://quicktalk2-0.netlify.app/login) to view quickTalk2.0
+
